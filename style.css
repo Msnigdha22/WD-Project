@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background: linear-gradient(to right, #e2d6e7, #e1c6ef);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff5733;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar .logo span {
+    color: #fcd303;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    text-align: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 1opx 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #fcd303;
+}
+
+.hero {
+    background: url('kike-vega-F2qh3yjz6Jk-unsplash\ \(2\).jpg') no-repeat center center/cover;
+    color: white;
+    padding: 180px 20px 120px;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    height: 90vh;
+    
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #fcd303;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #ffcc00;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 60px 20px;
+    background: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width:900px;
+}
+.about-img{
+    width: 100%;
+    min-width: 500px;
+    display:block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.feature img {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.testimonial img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;  
+    object-fit: cover;   
+    margin-bottom: 10px;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
